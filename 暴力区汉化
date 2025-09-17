@@ -41,6 +41,8 @@ local Translations = {
     ["No survivor nearby to carry."] = "附近没有幸存者可供运送。",
     ["Auto Hook Success!"] = "自动挂钩成功！",
     ["Teleported & Hooked successfully!"] = "传送＆钩住成功！",
+    ["Tap RightShift to reopen the interface"] = "点击 RightShift 重新打开界面",
+    ["Interface Hidden"] = "界面隐藏",
 
 }
 
