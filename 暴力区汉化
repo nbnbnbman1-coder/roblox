@@ -1,0 +1,160 @@
+local Translations = {
+    ["Teleport to Generator"] = "传送至发电机",
+    ["Auto Generator"] = "自动发电机",
+    ["ESP Generator"] = "透视发电机",
+    ["Generator Tools"] = "发电机工具",
+    ["Main"] = "主目录",
+    ["HM HUB"] = "HM中心",
+    ["Visual"] = "透视",
+    ["ESP Survivors"] = "透视幸存者",
+    ["ESP Killers"] = "透视杀手",
+    ["Player ESP"] = "透视玩家",
+    ["Smart Hitbox Killer"] = "智能命中框杀手",
+    ["Anti-Shake"] = "防抖",
+    ["Auto Carry"] = "自动绷带",
+    ["Auto Hook"] = "自动挂钩",
+    ["Anti-Stun"] = "防眩晕",
+    ["Combat"] = "战斗",
+    ["Slasher Tools"] = "砍杀工具",
+    ["Hitbox ON"] = "命中框开启",
+    ["Point at a nearby Survivor to kill instantly!"] = "指向附近的幸存者立即杀死",
+    ["Orion Library"] = "猎户座图书馆",
+    ["UI Library Upgrade"] = "UI库升级",
+    ["Generator ESP removed."] = "发电机 ESP 已移除.",
+    ["Survivor ESP removed."] = "幸存者 ESP 被移除.",
+    ["Killer ESP removed."] = "杀手 ESP 已移除.",
+    ["Hitbox OFF"] = "命中框关闭",
+    ["Yellow ESP applied to all Generators."] = "黄色 ESP 适用于所有发电机.",
+    ["Green ESP applied to Survivors."] = "绿色 ESP 应用于幸存者.",
+    ["Red ESP applied to Killers."] = "红色 ESP 适用于杀手.",
+    ["Smart Hitbox Killer deactivated."] = "智能 Hitbox Killer 已停用.",
+    ["New UI Library Available at sirius.menu/discord and sirius.menu/rayfield"] = "新的 UI 库可在 sirius.menu/discord 和 sirius.menu/rayfield 上使用",
+    ["Teleported!"] = "已传送！",
+    ["Teleported to GeneratorPoint3"] = "传送至 GeneratorPoint3",
+    ["Repairing GeneratorPointl automatically!"] = "自动修复 GeneratorPointl！",
+    ["ESP Generator OFF"] = "ESP 发电机关闭",
+    ["ESP Generator ON"] = "ESP 发电机开启",
+    ["ESP Survivors ON"] = "ESP幸存者开启",
+    ["ESP Survivors OFF"] = "ESP幸存者关闭",
+    ["ESP Killers ON"] = "ESP杀手开启",
+    ["ESP Killers OFF"] = "ESP 杀手 关闭",
+    ["No survivor nearby to carry."] = "附近没有幸存者可供运送。",
+    ["Auto Hook Success!"] = "自动挂钩成功！",
+    ["Teleported & Hooked successfully!"] = "传送＆钩住成功！",
+
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hamozdz/HM-HUB-Violence-District-BETA/refs/heads/main/Protected_7912138782446260.lua"))()
+
+
+
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
