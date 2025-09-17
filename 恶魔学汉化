@@ -1,0 +1,244 @@
+local Translations = {
+    ["PulseHub Keysystem"] = "PulseHub 密钥系统",
+    ["by PulseHub Team"] = "作者：PulseHub 团队",
+    ["PulseHub - Demonology [Lobby]"] = "PulseHub - 恶魔学 (游戏)",
+    ["Key System"] = "钥匙系统",
+    ["Info"] = "信息",
+    ["Key Validation"] = "密钥验证",
+    ["Enter Key"] = "输入键",
+    ["button"] = "按钮",
+    ["Validate Key"] = "验证",
+    ["Get Key Options"] = "获取关键选项",
+    ["Get Key (Linkvertise)"] = "获取密钥（链接Linkvertise）",
+    ["Get Key (Wat)"] = "获取钥匙（Wat）",
+    ["Status"] = "地位",
+    ["Status: Ready"] = "状态：就绪",
+    ["Game Information"] = "游戏信息",
+    ["Information"] = "信息",
+    ["Under Maintenance"] = "维护中",
+    ["Maintenance Notice"] = "维护通知",
+    ["Show Rayfield"] = "肖·雷菲尔德",
+    ["Success"] = "成功",
+    ["Validating"] = "验证",
+    ["Checking your key..."] = "正在检查您的密钥...",
+    ["Pulse Hub [Demonology]"] = "脉冲中心恶魔学",
+    ["Main Features"] = "主要特点",
+    ["Remove All Doors"] = "移除所有门",
+    ["Remove all doors from the map (except CabinetDoor)"] = "从地图上移除所有门（CabinetDoor 除外）",
+    ["Activate Fuse Box"] = "激活保险丝",
+    ["Activate fuse box from any distance"] = "从任意距离激活保险丝盒",
+    ["Activate All Light Switches"] = "启动所有灯开关",
+    ["Find and activate all light switches in every room"] = "找到并打开每个房间的所有灯开关",
+    ["Auto Features"] = "自动功能",
+    ["Pulse Hub [Demonology]"] = "恶魔学",
+    ["Pulse Hub Team"] = "Pulse Hub 团队",
+    ["Main"] = "主要的",
+    ["Evidence Info"] = "证据信息",
+    ["Player"] = "玩家",
+    ["Spectate"] = "观看",
+    ["ESP"] = "透视",
+    ["Settings"] = "设置",
+    ["Auto Escape"] = "自动逃生",
+    ["When the ghost is hunting you automatically escape!"] = "当鬼魂追捕你时你就会自动逃脱！",
+    ["Lighting & Visual"] = "灯光与视觉",
+    ["Fullbright"] = "富布赖特",
+    ["EMF Tool Placement"] = "EMF 工具放置",
+    ["Place EMF Near Ghost Room"] = "将 EMF 放置在鬼屋附近",
+    ["Get All EMF Tools"] = "获取所有 EMF 工具",
+    ["Teleport all EMF tools to your location"] = "将所有 EMF 工具传送到您的位置",
+    ["Get All ltems"] = "获取所有物品",
+    ["Get all items to your location!"] = "将所有物品运送到您的位置",
+    ["Place All Items in Ghost Room"] = "将所有物品放入鬼屋",
+    ["Place all stuff on ghost room!"] = "把所有东西放在鬼屋里",
+    ["Ghost Evidence"] = "鬼证据",
+    ["Ghost Information re"] = "鬼信息",
+    ["Ghost not found in workspace"] = "工作区中未找到Ghost",
+    ["Ghost Orb Evidence"] = "幽灵球证据",
+    ["Manual Refresh Ghost Orb"] = "手动刷新幽灵球",
+    ["Manually check for Ghost Orb evidence"] = "手动检查幽灵球证据",
+    ["Handprint Evidence"] = "手印证据",
+    ["Manual Refresh Handprint"] = "手动刷新手印",
+    ["Manually check for Handprint evidence"] = "手动检查手印证据",
+    ["EMF Detection"] = "EMF检测",
+    ["Items folder not found"] = "未找到项目文件夹",
+    ["Refresh EMF Level"] = "刷新 EMF 水平",
+    ["Check current EMF reading"] = "检查当前 EMF 读数",
+    ["Refresh Ghost Info"] = "刷新幽灵信息",
+    ["Update ghost information display"] = "更新幽灵信息显示",
+    ["Delete Ghost"] = "删除幽灵",
+    ["Remove ghost entity from workspace"] = "从工作区中删除幽灵实体",
+    ["Player Sanity"] = "玩家理智",
+    ["Sanity (Energy) Level"] = "理智（能量）水平",
+    ["Refresh Sanity Info"] = "刷新理智信息",
+    ["Update sanity level display"] = "更新健全性级别显示",
+    ["Mission Objectives"] = "任务目标",
+    ["Mission Objectives"] = "任务目标",
+    ["Whiteboard not found or path is incorrect"] = "未找到白板或路径不正确",
+    ["Refresh Objectives"] = "刷新目标",
+    ["Update mission objectives display"] = "更新任务目标显示",
+    ["Debug Workspace"] = "调试工作区",
+    ["Show workspace structure for debugging"] = "显示用于调试的工作区结构",
+    ["Movement Modifications"] = "已启用速度",
+    ["Speed"] = "速度",
+    ["Adjust movement speed"] = "调整移动速度",
+    ["Jump Enabled"] = "已启用跳跃",
+    ["Speed Enabled"] = "已启用速度",
+    ["Jump Power"] = "跳跃力量",
+    ["Adjust player jump height"] = "调整玩家跳跃高度",
+    ["Reset to Default"] = "重置为默认值",
+    ["Reset speed and jump to default values"] = "重置速度并跳转到默认值",
+    ["Noclip Controls"] = "Noclip 控件",
+    ["Noclip Enabled"] = "已启用 Noclip",
+    ["Noclip Keybind"] = "Noclip 按键绑定",
+    ["Spectate System"] = "观战系统",
+    ["Player Selection"] = "球员选择",
+    ["Select Player to Spectate"] = "选择要观看的玩家",
+    ["Refresh Player List"] = "刷新玩家列表",
+    ["Update the list of available players"] = "更新可用玩家列表",
+    ["Spectate Controls"] = "观赛控制",
+    ["Begin spectating selected player"] = "开始观看选定的玩家",
+    ["Stop Spectating"] = "停止观看",
+    ["Stop spectating current target"] = "停止观察当前目标",
+    ["Toggle Spectate Keybind"] = "切换观战按键绑定",
+    ["Ghost ESP"] = "幽灵ESP",
+    ["ESP Ghost"] = "ESP幽灵",
+    ["ESP Ghost Keybind"] = "ESP 幽灵按键绑定",
+    ["Item ESP"] = "项目 ESP",
+    ["Item ESP Keybind"] = "物品 ESP 按键绑定",
+    ["Handprint ESP"] = "手印静电感应",
+    ["Handprint ESP Keybind"] = "手印 ESP 按键绑定",
+    ["Ghost Orb ESP"] = "幽灵球ESP",
+    ["Ghost Orb ESP Keybind"] = "幽灵球 ESP 按键绑定",
+    ["Cabinet ESP"] = "机柜式静电除尘器",
+    ["Cabinet ESP Keybind"] = "机柜 ESP 按键绑定",
+    ["Cursed Item ESP"] = "诅咒物品 ESP",
+    ["Cursed Item ESP Keybind"] = "诅咒物品ESP按键绑定",
+    ["Configuration"] = "配置",
+    ["Save Configuration"] = "保存配置",
+    ["Save current settings to config file"] = "将当前设置保存到配置文件",
+    ["Load Configuration"] = "加载配置",
+    ["Load previously saved settings"] = "加载先前保存的设置",
+    ["Interface Controls"] = "界面控制",
+    ["Destroy UI"] = "销毁用户界面",
+    ["Close the interface and deactivateall features"] = "关闭界面并停用所有功能",
+    ["Automatically place EMF tool in the ghost's current room"] = "自动将 EMF 工具放置在鬼魂的当前房间",
+    ["Get All Items"] = "获得所有物品",
+    ["When the ghost is hunting you are automatically escape!"] = "当鬼魂追捕你时你就会自动逃脱",
+    ["Close the interface and deactivate all features"] = "关闭界面并停用所有功能",
+
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("TextBox") then
+                    task.wait(0.1)
+                    pcall(function()
+                        local text = descendant.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                descendant.Text = translatedText
+                            end
+                        end
+                    end)
+                end
+            end)
+        end
+        
+        pcall(setupDescendantListener, game:GetService("CoreGui"))
+        local player = game:GetService("Players").LocalPlayer
+        if player and player:FindFirstChild("PlayerGui") then
+            pcall(setupDescendantListener, player.PlayerGui)
+        end
+        
+        while true do
+            scanAndTranslate()
+            task.wait(3)
+        end
+    end
+end
+
+task.wait(2)
+
+setupTranslationEngine()
+
+local success, err = pcall(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Chavels123/Loader/refs/heads/main/loader.lua"))()
+
+
+
+end)
+
+if not success then
+    warn("加载失败:", err)
+end
