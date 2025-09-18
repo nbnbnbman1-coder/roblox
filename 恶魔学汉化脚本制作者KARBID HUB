@@ -1,0 +1,184 @@
+local Translations = {
+    ["KARBID HUB"] = "卡比德枢纽",
+    ["Welcome to Karbid Hub Key System"] = "欢迎来到 Karbid Hub 密钥系统",
+    ["Paste your key to unlock"] = "粘贴您的密钥以解锁",
+    ["Get Key"] = "获取密钥",
+    ["Verify"] = "核实",
+    ["Link Copied | Paste On Your Browser"] = "链接已复制 | 粘贴到您的浏览器",
+    ["Invalid Key"] = "无效密钥",
+    ["Discord Copied | Paste On Your Browser"] = "Discord 已复制 | 粘贴到您的浏览器",
+    ["Karbid Hub"] = "卡比德枢纽",
+    ["Demonology"] = "恶魔学",
+    ["Server"] = "服务器",
+    ["Information on the session you're currently in"] = "有关您当前所在会话的信息",
+    ["Players"] = "玩家",
+    ["playing"] = "玩",
+    ["Maximum Players"] = "最大玩家数",
+    ["50 players can join this server"] = "50名玩家可以加入此服务器",
+    ["Delta"] = "三角洲",
+    ["Your Executor Supports This Script."] = "您的执行者支持此脚本。",
+    ["Latency"] = "延迟",
+    ["Server Region"] = "服务器区域",
+    ["Friends"] = "朋友们",
+    ["Find out what your friends are currently doing"] = "了解您的朋友目前正在做什么",
+    ["In server for"] = "在服务器中",
+    ["Join Script"] = "加入脚本",
+    ["Tap to copy join script"] = "点击复制加入脚本",
+    ["no friends"] = "没有朋友",
+    ["Offline"] = "离线",
+    ["Online"] = "在线的",
+    ["AII"] = "全部",
+    ["Tap to join the Discord Server"] = "点击加入 Discord 服务器",
+    ["Re-join"] = "重新加入",
+    ["Server Hop"] = "服务器跳跃",
+    ["Anti AFK"] = "防AFK",
+    ["Character Modifier"] = "角色修改器",
+    ["Original Walk Speed"] = "原始步行速度",
+    ["Original Jump Power"] = "原始跳跃力",
+    ["Walk Speed"] = "步行速度",
+    ["Jump Power"] = "跳跃力量",
+    ["Enable Modifier"] = "启用修改器",
+    ["Sprint"] = "短跑",
+    ["Hold Original Speed x3| Don't change the keybind, idk How to make it works yet XD"] = "保持原始速度 x3 不要更改键绑定，我不知道如何使其工作 XD",
+    ["Infinity Jump"] = "无限跳跃",
+    ["No Clip"] = "无剪辑",
+    ["Float"] = "漂浮",
+    ["Ghost Orb"] = "幽灵球",
+    ["Freezing"] = "冷冻",
+    ["Laser Projector"] = "激光投影仪",
+    ["Handprints"] = "手印",
+    ["Ghost Writing"] = "代笔",
+    ["Wither"] = "凋零",
+    ["EMF"] = "电子波动",
+    ["Sprit Box"] = "精灵盒",
+    ["Main Content"] = "主要内容",
+    ["Ghost | Orbs | Handprints ESP"] = "幽灵 | 球体 | 手印 ESP",
+    ["Item | Fuse Box ESP"] = "项目 | 保险丝盒 ESP",
+    ["Candle ESP"] = "蜡烛静电除尘器",
+    ["Other Player ESP"] = "其他玩家 ESP",
+    ["Upgrades"] = "升级",
+    ["Add Ons"] = "附加组件",
+    ["Infinite Stamina (Sprint)"] = "无限耐力冲刺",
+    ["Fuse Box"] = "保险丝盒",
+    ["Full Bright"] = "全亮",
+    ["Teleport To Players"] = "传送至玩家",
+    ["Select Player"] = "选择玩家",
+    ["Lock"] = "锁",
+    ["Places"] = "地点",
+    ["Copy Link To Clipboard"] = "将链接复制到剪贴板",
+    ["Karbid Hub Discord"] = "Karbid 中心 Discord",
+    ["RIP Brainrot"] = "安息吧 Brainrot",
+    ["Hunty Zombie"] = "狩猎僵尸",
+    ["Don't Wake The Brainrots"] = "不要唤醒脑子坏掉的人",
+    ["Fish It!"] = "钓鱼吧！",
+    ["Don't Wake The Fish!"] = "不要吵醒鱼！",
+    ["Brainrot Zombie Evolution"] = "脑腐僵尸进化",
+    ["Clean A House"] = "打扫房子",
+    ["Mix A Brainrot"] = "混合脑腐病",
+    ["Steal Cookies"] = "偷饼干",
+    ["Trade A Brainrot"] = "交易脑子烂掉",
+    ["KPop Demon Hunters Speed Clicker"] = "KPop 恶魔猎人 高速点击器",
+    ["Find The Differences"] = "找不同",
+    ["Slime Incremental [Dead Game]"] = "史莱姆增量（死亡游戏）",
+    ["Demonology"] = "恶魔学",
+    ["Fight Anime Bosses"] = "与动漫 Boss 战斗",
+    ["Configurations"] = "配置",
+    ["Config Creator"] = "配置创建者",
+    ["Config Name"] = "配置名称",
+    ["Insert a name for your to be created config."] = "为要创建的配置插入一个名称。",
+    ["Create Config"] = "创建配置",
+    ["Create a config with all of your current settings."] = "使用所有当前设置创建配置。",
+    ["Config Load/Settings"] = "配置加载/设置",
+    ["Select Config"] = "选择配置",
+    ["Select a config to load your settings on."] = "选择一个配置来加载您的设置。",
+    ["Load Config"] = "加载配置",
+    ["Load your saved config settings."] = "加载您保存的配置设置。",
+    ["覆盖配置"] = "覆盖配置",
+    ["Overwrite your current config settings."] = "覆盖您当前的配置设置。",
+    ["Refresh Config List"] = "刷新配置列表",
+    ["Refresh the current config list."] = "刷新当前配置列表。",
+    ["Set as autoload"] = "设置为自动加载",
+    ["Set a config to auto load setting in your next session."] = "在下一个会话中设置配置以自动加载设置。",
+    ["Current Auto Load"] = "当前自动加载",
+    ["Delete The Autoload File"] = "删除自动加载文件",
+    ["Toggle Interface"] = "切换界面",
+    ["Interface Hidden"] = "界面隐藏",
+    ["Ghost"] = "鬼",
+    ["Walkspeed"] = "步行速度",
+    ["FuseBox On"] = "保险丝盒打开",
+
+}
+
+local function translateText(text)
+    if not text or type(text) ~= "string" then return text end
+    
+    if Translations[text] then
+        return Translations[text]
+    end
+    
+    for en, cn in pairs(Translations) do
+        if text:find(en) then
+            return text:gsub(en, cn)
+        end
+    end
+    
+    return text
+end
+
+local function setupTranslationEngine()
+    local success, err = pcall(function()
+        local oldIndex = getrawmetatable(game).__newindex
+        setreadonly(getrawmetatable(game), false)
+        
+        getrawmetatable(game).__newindex = newcclosure(function(t, k, v)
+            if (t:IsA("TextLabel") or t:IsA("TextButton") or t:IsA("TextBox")) and k == "Text" then
+                v = translateText(tostring(v))
+            end
+            return oldIndex(t, k, v)
+        end)
+        
+        setreadonly(getrawmetatable(game), true)
+    end)
+    
+    if not success then
+        warn("元表劫持失败:", err)
+       
+        local translated = {}
+        local function scanAndTranslate()
+            for _, gui in ipairs(game:GetService("CoreGui"):GetDescendants()) do
+                if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                    pcall(function()
+                        local text = gui.Text
+                        if text and text ~= "" then
+                            local translatedText = translateText(text)
+                            if translatedText ~= text then
+                                gui.Text = translatedText
+                                translated[gui] = true
+                            end
+                        end
+                    end)
+                end
+            end
+            
+            local player = game:GetService("Players").LocalPlayer
+            if player and player:FindFirstChild("PlayerGui") then
+                for _, gui in ipairs(player.PlayerGui:GetDescendants()) do
+                    if (gui:IsA("TextLabel") or gui:IsA("TextButton") or gui:IsA("TextBox")) and not translated[gui] then
+                        pcall(function()
+                            local text = gui.Text
+                            if text and text ~= "" then
+                                local translatedText = translateText(text)
+                                if translatedText ~= text then
+                                    gui.Text = translatedText
+                                    translated[gui] = true
+                                end
+                            end
+                        end)
+                    end
+                end
+            end
+        end
+        
+        local function setupDescendantListener(parent)
+            parent.DescendantAdded:Connect(function(descendant)
+                if descendant:IsA("TextLabel") or descendant:IsA("TextButton") 
