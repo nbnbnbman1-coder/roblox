@@ -50,7 +50,7 @@ local Translations = {
     ["Ghost Writing"] = "代笔",
     ["Wither"] = "凋零",
     ["EMF"] = "电子波动",
-    ["Sprit Box"] = "精灵盒",
+    ["Sprit Box"] = "灵魂盒子",
     ["Main Content"] = "主要内容",
     ["Ghost | Orbs | Handprints ESP"] = "幽灵 | 球体 | 手印 ESP",
     ["Item | Fuse Box ESP"] = "项目 | 保险丝盒 ESP",
@@ -106,6 +106,13 @@ local Translations = {
     ["Ghost"] = "鬼",
     ["Walkspeed"] = "步行速度",
     ["FuseBox On"] = "保险丝盒打开",
+    ["Spirit Box"] = "灵魂盒子",
+    ["Save Position"] = "保存当前位置",
+    ["Save Current Position (Temporary)"] = "保存当前位置临时",
+    ["Load Position"] = "加载保存位置",
+    ["Load Saved Position"] = "加载保存位置",
+    ["Writing"] = "写作",
+    ["HUNTING"] = "狩猎",
 
 }
 
